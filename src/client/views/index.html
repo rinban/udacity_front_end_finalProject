@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Travel App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap" rel="stylesheet"> 
+  </head>
+
+  <body>
+      <div id = "app">
+        <form action="javascript:;" onsubmit="return Client.submitForm(event)">
+          <div class ="holder headline">
+            Travel Planner App
+          </div>
+          <div class ="holder">
+            <label for="from">Enter your country here</label>
+            <input type="text" id="from" name="from" placeholder="your country">
+          </div>
+          <div class ="holder">
+            <label for="to">Enter the destination country here</label>
+            <input type= "text" id="to" name="to" placeholder="destination country">
+          </div>
+          <div class ="holder">
+            <label for="departure">Departure date</label>
+            <input type= "Date" id="depart" name="depart" >
+          </div>
+          <div class ="holder">
+            <label for="return">Return date</label>
+            <input type= "Date" id="return" name="return">
+          </div>
+          <div class="button">
+            <input type="submit" value="Submit" id="submit">
+          </div>
+        </form>
+        <div class ="holder entry" id="dashboard"></div>
+      </div>
+      
+      <script>
+        // Check that service workers are supported
+        if ('serviceWorker' in navigator) {
+            // Use the window load event to keep the page load performant
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+      </script>
+
+  </body>
+</html>
