@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Bebas+Neue&display=swap'); 
+
+body {
+	font-family: 'Abel', sans-serif;
+    background-image:url("light-blue.jpg") ;
+}
+
+#app {
+    width: 50%;
+    height: 50%;
+	margin: 30px auto;
+	padding: 2rem 1.25rem;
+	background-color: #fff;
+	box-shadow: 2px 5px 6px 6px rgba(0, 0, 0, 0.3), 2px 5px 6px 0 rgba(255, 255, 255, 0.4);
+	color: black;
+	font-size: 20px;
+	line-height: 2.5em;
+}
