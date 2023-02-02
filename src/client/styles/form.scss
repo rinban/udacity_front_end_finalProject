@@ -58,3 +58,13 @@
        background:  #3b4873c7;    
     }
 }
+
+
+@media (min-width: 250px) and (max-width: 360px){
+    .holder {
+    
+        label {
+            font-size: 14px;
+        }
+	}
+}

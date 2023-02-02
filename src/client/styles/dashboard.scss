@@ -21,6 +21,33 @@
 	}
 
 	.error{
+		font-size: 20px;
 		color: red;
 	}
 }
+
+
+@media (min-width: 361px) and (max-width: 600px){
+	.entry{
+		width: 80%;
+		.error{
+			font-size: 18px;
+		}
+	}
+}
+@media (min-width: 250px) and (max-width: 360px){
+	.entry{
+		width: 80%;
+		.image{
+			width:100%;
+
+			img{
+				width:100%
+			}
+		}
+		.error{
+			font-size: 14px;
+		}
+    }
+}
+
